@@ -8,7 +8,7 @@ It returns an array of AST Literal objects.
 var literals = require('literals')
 var acorn = require('acorn')
 
-var ast = acorn.parse('var x = 1 * 2 = 3')
+var ast = acorn.parse('var x = 1 * 2 + 3')
 
 console.log(literals(ast))
 ```
